@@ -4,6 +4,7 @@ import { InfoSobreCoronaComponent } from './info-sobre-corona/info-sobre-corona.
 import { InfoPrevencaoComponent } from './info-prevencao/info-prevencao.component';
 import { InfoInternacionalComponent } from './info-internacional/info-internacional.component';
 import { InfoGraficoPaisComponent } from './info-grafico-pais/info-grafico-pais.component';
+import { dadosInternacionalResolver } from './resolvers/dados-internalcional.resolver';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   },
   {
     path: 'info-internacional',
-    component: InfoInternacionalComponent
+    component: InfoInternacionalComponent,
+    resolve: { dadosPaises: dadosInternacionalResolver }
   },
   {
     path: 'info-grafico',

@@ -1,1 +1,211 @@
-<p>info-internacional works!</p>
+<dx-data-grid id="gridContainer" 
+	[dataSource]="dadosPaises" 
+	[showBorders]="true"
+	[allowColumnResizing]="true"
+	[showBorders]="false"
+	[height]="800"
+	[columnAutoWidth]="true"
+	[rowAlternationEnabled]="true"
+    [columnResizingMode]="'widget'"
+	[columnMinWidth]="15">
+	<dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+	<dxo-paging [pageSize]="100"></dxo-paging>
+	<dxo-selection mode="single"></dxo-selection>
+    <dxo-pager 
+        [showPageSizeSelector]="true"
+        [allowedPageSizes]="[100, 200, 300]"
+        [showInfo]="true">
+    </dxo-pager>
+	<dxo-load-panel [enabled]="true"></dxo-load-panel>
+    <dxo-scrolling columnRenderingMode="Standard"></dxo-scrolling>
+	<dxi-column dataField="local" width="250" [fixed]="true" >
+	</dxi-column>
+	<dxi-column caption="Janeiro">
+		<dxi-column caption="1"  alignment="center" dataField="janeiro.d1" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="2"  alignment="center" dataField="janeiro.d2" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="3"  alignment="center" dataField="janeiro.d3" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="4"  alignment="center" dataField="janeiro.d4" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="5"  alignment="center" dataField="janeiro.d5" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="6"  alignment="center" dataField="janeiro.d6" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="7"  alignment="center" dataField="janeiro.d7" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="8"  alignment="center" dataField="janeiro.d8" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="9"  alignment="center" dataField="janeiro.d9" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="10"  alignment="center" dataField="janeiro.d10" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="11"  alignment="center" dataField="janeiro.d11" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="12"  alignment="center" dataField="janeiro.d12" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="13"  alignment="center" dataField="janeiro.d13" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="14"  alignment="center" dataField="janeiro.d14" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="15"  alignment="center" dataField="janeiro.d15" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="16"  alignment="center" dataField="janeiro.d16" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="17"  alignment="center" dataField="janeiro.d17" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="18"  alignment="center" dataField="janeiro.d18" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="19"  alignment="center" dataField="janeiro.d19" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="20"  alignment="center" dataField="janeiro.d20" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="21"  alignment="center" dataField="janeiro.d21" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="22"  alignment="center" dataField="janeiro.d22" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="23"  alignment="center" dataField="janeiro.d23" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="24"  alignment="center" dataField="janeiro.d24" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="25"  alignment="center" dataField="janeiro.d25" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="26"  alignment="center" dataField="janeiro.d26" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="27"  alignment="center" dataField="janeiro.d27" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="28"  alignment="center" dataField="janeiro.d28" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="29"  alignment="center" dataField="janeiro.d29" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="30"  alignment="center" dataField="janeiro.d30" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="31"  alignment="center" dataField="janeiro.d31" format="fixedPoint">
+		</dxi-column>
+	</dxi-column>
+	<dxi-column caption="Fevereiro">
+		<dxi-column caption="1"  alignment="center" dataField="fevereiro.d1" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="2"  alignment="center" dataField="fevereiro.d2" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="3"  alignment="center" dataField="fevereiro.d3" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="4"  alignment="center" dataField="fevereiro.d4" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="5"  alignment="center" dataField="fevereiro.d5" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="6"  alignment="center" dataField="fevereiro.d6" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="7"  alignment="center" dataField="fevereiro.d7" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="8"  alignment="center" dataField="fevereiro.d8" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="9"  alignment="center" dataField="fevereiro.d9" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="10"  alignment="center" dataField="fevereiro.d10" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="11"  alignment="center" dataField="fevereiro.d11" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="12"  alignment="center" dataField="fevereiro.d12" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="13"  alignment="center" dataField="fevereiro.d13" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="14"  alignment="center" dataField="fevereiro.d14" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="15"  alignment="center" dataField="fevereiro.d15" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="16"  alignment="center" dataField="fevereiro.d16" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="17"  alignment="center" dataField="fevereiro.d17" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="18"  alignment="center" dataField="fevereiro.d18" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="19"  alignment="center" dataField="fevereiro.d19" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="20"  alignment="center" dataField="fevereiro.d20" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="21"  alignment="center" dataField="fevereiro.d21" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="22"  alignment="center" dataField="fevereiro.d22" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="23"  alignment="center" dataField="fevereiro.d23" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="24"  alignment="center" dataField="fevereiro.d24" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="25"  alignment="center" dataField="fevereiro.d25" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="26"  alignment="center" dataField="fevereiro.d26" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="27"  alignment="center" dataField="fevereiro.d27" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="28"  alignment="center" dataField="fevereiro.d28" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="29"  alignment="center" dataField="fevereiro.d29" format="fixedPoint">
+		</dxi-column>
+	</dxi-column>
+	<dxi-column caption="Março">
+		<dxi-column caption="1"  alignment="center" dataField="marco.d1" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="2"  alignment="center" dataField="marco.d2" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="3"  alignment="center" dataField="marco.d3" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="4"  alignment="center" dataField="marco.d4" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="5"  alignment="center" dataField="marco.d5" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="6"  alignment="center" dataField="marco.d6" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="7"  alignment="center" dataField="marco.d7" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="8"  alignment="center" dataField="marco.d8" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="9"  alignment="center" dataField="marco.d9" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="10"  alignment="center" dataField="marco.d10" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="11"  alignment="center" dataField="marco.d11" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="12"  alignment="center" dataField="marco.d12" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="13"  alignment="center" dataField="marco.d13" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="14"  alignment="center" dataField="marco.d14" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="15"  alignment="center" dataField="marco.d15" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="16"  alignment="center" dataField="marco.d16" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="17"  alignment="center" dataField="marco.d17" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="18"  alignment="center" dataField="marco.d18" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="19"  alignment="center" dataField="marco.d19" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="20"  alignment="center" dataField="marco.d20" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="21"  alignment="center" dataField="marco.d21" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="22"  alignment="center" dataField="marco.d22" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="23"  alignment="center" dataField="marco.d23" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="24"  alignment="center" dataField="marco.d24" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="25"  alignment="center" dataField="marco.d25" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="26"  alignment="center" dataField="marco.d26" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="27"  alignment="center" dataField="marco.d27" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="28"  alignment="center" dataField="marco.d28" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="29"  alignment="center" dataField="marco.d29" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="30"  alignment="center" dataField="marco.d30" format="fixedPoint">
+		</dxi-column>
+		<dxi-column caption="31"  alignment="center" dataField="marco.d31" format="fixedPoint">
+		</dxi-column>
+	</dxi-column>
+</dx-data-grid>

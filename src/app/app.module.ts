@@ -8,6 +8,7 @@ import { InfoInternacionalComponent } from './info-internacional/info-internacio
 import { InfoGraficoPaisComponent } from './info-grafico-pais/info-grafico-pais.component';
 import { InfoSobreCoronaComponent } from './info-sobre-corona/info-sobre-corona.component';
 import { InfoPrevencaoComponent } from './info-prevencao/info-prevencao.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { InfoPrevencaoComponent } from './info-prevencao/info-prevencao.componen
     InfoInternacionalComponent,
     InfoGraficoPaisComponent,
     InfoSobreCoronaComponent,
-    InfoPrevencaoComponent
+    InfoPrevencaoComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DevExtremeModule
+    DevExtremeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
