@@ -126,6 +126,8 @@ export class InfoGraficoPaisComponent implements OnInit {
     this.infoPais.push({ dia: '28/3', qtdCasos: pais.marco.d28});
     this.infoPais.push({ dia: '29/3', qtdCasos: pais.marco.d29});
 
+    this.titulo = this.selectPaises.value.local;
+
     while(this.infoPais[0].qtdCasos == 0){
       this.infoPais.splice(0, 1);
     }

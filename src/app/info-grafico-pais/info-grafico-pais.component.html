@@ -1,26 +1,20 @@
 <div id="chart-demo" style="width: 100%">
 	<div id="selectbox-demo">
-		<div class="widget-container" style="width: 450px" >
-			<div class="dx-fieldset">
-				<div class="dx-field">
-					<div class="dx-field-label">Selecione um país</div>
-					<div class="dx-field-value">
-						<dx-select-box #selectPaises [dataSource]="paises"
-							(onSelectionChanged)="onSelPais()"
-							displayExpr="local"
-							[searchMode]="'contains'"
-							[searchExpr]="searchExprOption"
-							[searchEnabled]="true"></dx-select-box>
-					</div>
-				</div>
-			</div>
+		<div class="widget-container" style="width: 450px; margin-left: auto; margin-right: auto; margin-bottom: 28px;" >
+			<dx-select-box #selectPaises [dataSource]="paises"
+				(onSelectionChanged)="onSelPais()"
+				displayExpr="local"
+				placeholder="Selecione um país"
+				[searchMode]="'contains'"
+				[searchExpr]="searchExprOption"
+				[searchEnabled]="true">
+			</dx-select-box>
 		</div>
 	</div>
 	
 	<dx-chart
         palette="violet"
-        [dataSource]="infoPais"
-        [title]="titulo">		
+        [dataSource]="infoPais">		
 		<dxi-series valueField="qtdCasos" name="Total de casos no país"></dxi-series>
 		<dxo-common-series-settings #seriesSettings
             argumentField="dia"
