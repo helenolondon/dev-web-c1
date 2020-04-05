@@ -9,7 +9,6 @@ import { ApiServicesService } from 'src/api/api-services.service';
 export class dadosInternacionalResolver implements Resolve<any>{
 	
 	resolve() {
-		
 		return this.apiService.RetDadosInternacional();
 	}
 
