@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { ApiServicesService } from 'src/api/api-services.service';
 import { Route } from '@angular/compiler/src/core';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -12,14 +12,21 @@ import { DxDataGridComponent } from 'devextreme-angular';
 export class InfoInternacionalComponent implements AfterViewInit {
   @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
   
-  dadosPaises: any;
+  dadosPaises: any[];
 
-  constructor(private sercices: ApiServicesService, private route: ActivatedRoute) { }
+  constructor(private sercices: ApiServicesService, private route: ActivatedRoute, private cdr: ChangeDetectorRef) { }
 
   ngAfterViewInit(): void {
     this.route.data.subscribe((resp: {dadosPaises: any}) => {
       this.dadosPaises = resp.dadosPaises;
-      this.dataGrid.instance.getDataSource().reload();
+      this.dataGrid.dataSource = this.dadosPaises;
+      var ds = this.dataGrid.instance.getDataSource();
+      if(ds){
+        ds.reload();
+      }
+      
+      this.cdr.detectChanges();
+
     });
   }
 }

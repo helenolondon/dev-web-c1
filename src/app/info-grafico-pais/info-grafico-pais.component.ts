@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoGraficoPaisComponent implements OnInit {
 
+  titulo: string = "Gráfico do Corona Vírus";
   constructor() { }
 
   ngOnInit() {
