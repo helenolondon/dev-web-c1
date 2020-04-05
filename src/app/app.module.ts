@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DevExtremeModule, DxChartModule, DxSelectBoxModule } from 'devextreme-angular';
+import { DevExtremeModule, DxChartModule, DxSelectBoxModule, DxCheckBoxModule } from 'devextreme-angular';
 import { InfoInternacionalComponent } from './info-internacional/info-internacional.component';
 import { InfoGraficoPaisComponent } from './info-grafico-pais/info-grafico-pais.component';
 import { InfoSobreCoronaComponent } from './info-sobre-corona/info-sobre-corona.component';
@@ -23,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     DevExtremeModule,
     HttpClientModule,
     DxChartModule, 
+    DxSelectBoxModule,
+    DxCheckBoxModule, 
     DxSelectBoxModule
   ],
   providers: [],
